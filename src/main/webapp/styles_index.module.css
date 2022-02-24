@@ -1,0 +1,294 @@
+:root {
+    --main-color: rgba(0, 0, 0, 0.973);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    font-family: 'Akaya Telivigala', cursive;
+    text-decoration: transparent;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--main-color);
+}
+
+body {
+	max-width: 100vw;
+	max-height: 100vh;
+}
+
+.input-busca {
+    position: relative;
+    width: 50%;
+    margin: 0 1rem;
+    display: flex;
+}
+
+.input-busca input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+input:focus {
+    outline: transparent;
+}
+
+.input-busca button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 5px;
+}
+
+.icones img {
+    margin: 1rem;
+}
+
+.nav-items {
+    background: var(--main-color);
+    color: white;
+}
+
+.menu-items-nav {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.menu-items-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menu-items-nav li {
+    cursor: pointer;
+}
+
+.menu-items-nav ul li a {
+    padding: 1rem 0.2rem;
+    transition: 0.1s;
+}
+
+.menu-items-nav ul>li:hover a {
+    background: white;
+    color: black;
+}
+
+.sale {
+    background: red;
+}
+
+.menu-items-nav {
+    position: relative;
+}
+
+.menu-items-nav ul>li:hover ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    margin-right: 5rem;
+    margin-top: 1rem;
+    min-width: 100%;
+}
+
+.menu-items-nav ul li ul {
+    max-width: 40vw;
+    display: none;
+    color: black;
+    background-color: white;
+    position: absolute;
+    left: 2.8rem;
+    padding-bottom: 2rem;
+    z-index: 9999!important;
+}
+
+.menu-items-nav ul li ul li {
+    color: #444;
+    font-family: 'Akaya Telivigala', cursive;
+    text-transform: uppercase;
+    width: 330px;
+    margin-top: 1.5rem;
+    padding-left: 0.3rem;
+}
+
+.mten {
+    max-height: 180px;
+}
+
+.mrou {
+    max-height: 220px;
+}
+
+.macess {
+    max-height: 316px;
+}
+
+.mnike {
+    max-height: 380px;
+}
+
+.madid {
+    max-height: 316px;
+}
+
+.mvans {
+    max-height: 220px;
+}
+
+.mpuma {
+    max-height: 150px;
+}
+
+.mskate {
+    max-height: 200px;
+}
+
+main img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1351px;
+}
+
+.slider {
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked~img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.tel {
+    background: #171717;
+    color: white;
+}
+
+.label-texto {
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 0.7rem;
+}
+
+.num {
+    font-size: .5rem;
+}
+
+.contato>div {
+    margin-right: 25px;
+}
+
+.contato {
+    max-width: 100px;
+    padding: 0.4rem 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.tel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+section {
+	margin-top: 570px;
+	padding-top: 50px;
+	display: flex;
+    align-items: center;
+    justify-content: space-evenly;	
+    background: black;	
+}
+
+
+section h4, p {
+	color: white;
+}
+
+span {
+	color: red;
+}
+
+.btn {
+	margin: 1rem 50px;
+	padding: 1rem 2rem;
+	background: #dc3545;
+	border: 0;
+	border-radius: 8px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.4rem;
+	transition: all 0.3s; 
+	cursor: pointer;
+}
+
+
+.btn:hover {
+	filter: brightness(0.7);
+}
