@@ -104,9 +104,9 @@
             <input type="text" class="form-control" id="idade" name="idade" required>
             <small class="form-text text-muted "></small>
         </div>
-        
+        <input type="hidden" name="diaCadastro" id="dataC"/>
        <div class="form-group mt-e-2" style="margin-top:25px;display:flex;flex-direction:column; align-items:center;justify-content:center;">
-            <h5 >Gênero</h5>
+            <h5 >GÃªnero</h5>
              <div class="form-group mt-e-2">
        		<label ><input  type="radio" name="homem" id="m"  value="true" required > Masculino</label>
        		<label ><input  type="radio" name="homem" id="f"   value="false" required> Feminino</label>
@@ -125,7 +125,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="#">Lista de usuários</a>
+      <a class="nav-item nav-link" href="#">Lista de usuÃ¡rios</a>
       <a class="nav-item nav-link" href="dash">Dashboard</a>
     </div>
   </div>
@@ -137,11 +137,11 @@
 				<tr>
 					<th scope="col">id</th>
 					<th scope="col">Nome</th>
-					<th scope="col">Endereço</th>
+					<th scope="col">EndereÃ§o</th>
 					<th scope="col">Email</th>
 					<th scope="col">Telefone</th>
 					<th scope="col">Produtos de interesse</th>
-					<th scope="col">Gênero</th>
+					<th scope="col">GÃªnero</th>
 					<th scope="col">Idade</th>
 					<th scope="col">Editar</th>
 					<th scope="col">Excluir</th>
@@ -169,7 +169,7 @@
 	<script>
 	
 		function deleteUser(id){
-			if(confirm("Confirmar exclusão do cliente " + id)) {
+			if(confirm("Confirmar exclusÃ£o do cliente " + id)) {
 				window.location.assign("delete_cliente?idCliente="+id);
 			}
 		}
@@ -212,6 +212,7 @@
 	           } else {
 	     	   	document.getElementById("m").setAttribute("checked", true)  
 	           }
+		   document.getElementById("dataC").setAttribute("value", user.dia_cad + "")
 		 }
         </script>
 </body>
