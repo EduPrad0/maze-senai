@@ -36,7 +36,7 @@
         <main>
             <div class="contact">
                 <div class="inf-t">
-                    <h2>Diga sua experiência</h2>
+                    <h2>Diga sua experiÃªncia</h2>
                     <p>Entre em contato a qualquer momento e respondemos em 24 horas</p>
                 </div>
                 <div class="contatos">
@@ -71,7 +71,7 @@
                             <input type="text" id="nome" name="nome" value="${cliente.nome }" required>
                         </div>
                         <div class="input-style">
-                            <label for="endereco">Endereço</label>
+                            <label for="endereco">EndereÃ§o</label>
                             <input type="text" id="endereco" name="endereco" value="${cliente.endereco }" required>
                         </div>
                         <div class="input-style">
@@ -80,7 +80,7 @@
                         </div>
                         <div class="input-style">
                             <label for="telefone">Telefone ou Celular</label>
-                            <input type="number" maxlength="9" required id="telefone" value="${cliente.telefone }" name="telefone" placeholder="900000   000">
+                            <input type="number" maxlength="9" required id="telefone" value="${cliente.telefone }" name="telefone">
                         </div>
                         <div class="input-style">
                             <label for="prodInte">Produto de interesse</label>
@@ -93,7 +93,7 @@
                     </div>
                     <div class="input-group-dois">
                         <div class="input_genero">
-                            <h3>Selecione seu gênero </h3>
+                            <h3>Selecione seu gÃªnero </h3>
                             <div class="radios">
                                 <label class="ir"><input  type="radio" name="homem" id="m" value="true" required> Masculino</label>
                                 <label class="ir"><input  type="radio" name="homem" id="f" value="false" required> Feminino</label>
