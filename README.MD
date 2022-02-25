@@ -9,7 +9,7 @@ CREATE DATABASE clientes
 ```
 ```
 CREATE TABLE `tb_cliente` (
-  `id` int(11) NOT NULL PRIMARY KEY AUTO INCREMENT,
+  `id` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
   `endereco` varchar(100) NOT NULL,
   `email` varchar(50) NOT NULL,
