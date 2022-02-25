@@ -71,7 +71,7 @@
 				<span aria-hidden="true">&times;</span>
 			</button>
 		</div>
-        <form action="/quisquinho/save" method="POST">
+        <form action="/maze/save" method="POST">
         <input type="hidden" name="id" id="id">
         	<div class="form-group mt-e-2">
             <label for=name>Nome</label>
